@@ -1,0 +1,43 @@
+<head>
+  <title>JUST DO IT</title>
+   
+</head>
+
+<body>
+    <div id="container">
+   <h3>Don't let your dreams be dreams</h3>
+
+    {{>doIt}}
+    </div> 
+</body>
+
+
+<template name="doIt">
+
+{{> addField}}
+    
+<ul>
+    {{#each doIt}}
+    {{>items}} 
+    {{/each}}
+    
+</ul>
+
+</template>
+
+<template name="items">
+    <li class="{{checked}}">
+    <input type="checkbox" {{checked}}>    
+    <input type="text" value="{{name}}" name="items">
+        <a> Created On:</a>
+     <input type="text" value="{{createdAt}}" name="items">
+    <a href="#" class="delete-doIt"><button id="quit">give up</button></a>
+    </li>
+</template>
+
+<template name="addField">
+<form>
+    Nothing is Impossible:
+    <input type="text" placeholder="Anyone else would quit..." name="doItName">
+</form> 
+</template>

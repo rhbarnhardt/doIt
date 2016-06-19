@@ -1,0 +1,67 @@
+/* CSS declarations go here */
+body{
+    background-color: rgba(75,153,92,1);
+    background-image:url(/200.gif);
+/*    background-size:contain;*/
+
+}
+
+#container{
+  background-color: rgba(75,153,92,.6);
+   
+    
+}
+
+[name=items]{
+    border:none;
+    font-family:"Avenir",sans-serif;
+    font-size:2.5vh;
+    padding:0.15em;
+    background-color: rgba(75,153,92,0);
+    color:#7F2A00;
+    text-shadow: .5px .5px .5px #ffffff;
+}
+
+h3, form, a{
+    font-family:"Avenir",sans-serif;
+    color:#b23b00;
+    font-size: 4vh;
+}
+
+#quit{
+    font-family:"Avenir",sans-serif;
+    padding:0.15em;
+}
+
+ul{
+    list-style: none;
+}
+
+:focus{
+
+background-color:#f9f9f9;
+cursor:pointer;
+}
+
+
+:focus{
+background-color: #f9f9f9;
+cursor:default;
+outline:none;
+}
+
+.checked{
+ background-color: #f0f0f0;
+    color:#666;
+}
+
+.checked [name=items]{
+ text-decoration: line-through;
+}
+
+.checked [name=items],
+.checked [name=items]:hover,
+.checked [name=items]:focus{
+    background-color: #f0f0f0;
+    
+}
